@@ -1,4 +1,245 @@
-.App {
+/*
+
+VAX ID CSS
+
+*/
+
+/* App.js CSS */
+
+.copyright {
+  text-align: center;
+}
+
+.footer-unique {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+code {
+  color: black;
+}
+
+
+/* LOGIN PAGE */
+
+.Header-logo {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 50%;
+}
+
+.login {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.login-header {
+  width: 30%;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+  width: 30%;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="employer-id"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="employer-id"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+/* login INPUT */
+.login input[type="submit"] { /* input */
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover { /* input */
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus { /* input */
+  border-color: #05a;
+}
+
+/* login BUTTON ----- inactive version */
+.login button[type="submit"] { /* button */
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login button[type="submit"]:hover { /* button */
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login button[type="submit"]:focus { /* button */
+  border-color: #05a;
+}
+
+
+/* DASHBOARD PAGE */
+
+.Navigation {
+  background: #EBEBEB;
+}
+
+.logout-button {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin: 2.5%;
+}
+
+.Dashboard, .Settings { /* title of page */
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* HEADING COMPONENT */
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 15%;
+  float: left;
+}
+
+h4 {
+  margin-left: 15px;
+  padding-top: 12px;
+  float: center;
+}
+
+/* .row {
+  display: flex;
+  position: inherit;
+  max-height: 4em;
+  border-radius: 10%;
+  text-align: left;
+  font-size: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+.column {
+  flex: 10%;
+  padding: 1%;
+} */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+/* DASHBOARD CONTENT COMPONENT (DashboardContent.js) */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+/* FOOTER COMPONENT */
+
+.FooterNavContainer {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-nav {
+  margin-right: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+/*
+----------------------------------
+CREATE REACT APP DEFAULT CSS
+
+*/
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +276,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
