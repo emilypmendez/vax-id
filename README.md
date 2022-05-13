@@ -1,3 +1,10 @@
+# Vax-ID SYSTEM
+Vax-ID is a vaccine identification system and can be viewed [at this link](https://vax-id.netlify.app).
+
+Designed by [Emily Portalatin-Mendez](https://github.com/emilypmendez).
+
+----------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
