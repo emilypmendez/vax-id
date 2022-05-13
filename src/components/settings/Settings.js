@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from '../dashboard/Navigation.js';
 import Footer from '../dashboard/Footer.js';
+import SettingsContent from './SettingsContent';
 
 export default function Settings() {
   return (
@@ -22,6 +23,7 @@ export default function Settings() {
     </nav>
       <Navigation/>
       <h2 className="Settings">Settings</h2>
+      <SettingsContent/>
       <Footer/>
     </main>
   );

@@ -3,7 +3,7 @@
 export default function Dashboard() {
   return (
     <footer>
-    <br/>
+    <br/><br/><br/><br/>
         <div className="footer-nav">
           <center>
             <div className="footer-row">
@@ -13,7 +13,7 @@ export default function Dashboard() {
               <div className="column"><a href="/#">Contact</a></div>
             </div>
           </center>
-          <br/><br/>
+          <br/><br/><br/><br/>
           <p className="copyright">
             VAX ID SYSTEM © All Rights Reserved
           </p>

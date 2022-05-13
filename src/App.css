@@ -297,6 +297,35 @@ ul {
 
 
 
+
+/* SettingsContent COMPONENT */
+
+.avatar-settings {
+  width: 25%;
+  height: 25%;
+}
+
+.settings-card {
+  /* padding: 10px;
+  margin: 10px; */
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+}
+
+.settings-profile-button {
+  align-items: right;
+  justify-content: right;
+  float: right;
+}
+
+
+
+
+
+
 /*
 ----------------------------------
 CREATE REACT APP DEFAULT CSS
