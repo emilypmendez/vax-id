@@ -18,10 +18,6 @@ VAX ID CSS
   margin: auto;
 }
 
-code {
-  color: black;
-}
-
 
 /* LOGIN PAGE */
 
@@ -155,6 +151,7 @@ code {
   color: #fff;
   cursor: pointer;
   margin: 2.5%;
+  padding: 1%;
 }
 
 .Dashboard, .Settings { /* title of page */
@@ -163,10 +160,13 @@ code {
   margin-top: 10px;
 }
 
-/* HEADING COMPONENT */
+
+
+
+
+/* HEADING HEADER (Heading.js) COMPONENT */
 
 .avatar {
-  vertical-align: middle;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -175,26 +175,10 @@ code {
 }
 
 h4 {
-  margin-left: 15px;
-  padding-top: 12px;
+  padding-left: 15px;
+  padding-top: 15px;
   float: center;
 }
-
-/* .row {
-  display: flex;
-  position: inherit;
-  max-height: 4em;
-  border-radius: 10%;
-  text-align: left;
-  font-size: 1em;
-  width: 100%;
-  height: 100%;
-}
-
-.column {
-  flex: 10%;
-  padding: 1%;
-} */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
@@ -208,11 +192,72 @@ h4 {
 
 /* DASHBOARD CONTENT COMPONENT (DashboardContent.js) */
 
-* {
-  padding: 0;
-  margin: 0;
+.vaccine-id-constants {
+  padding: 10px;
+  margin: 10px;
 }
 
+.level-low { /* LOW */
+  background-color: green;
+  color: white;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+}
+
+.level-mid { /* MEDIUM */
+  background-color: orange;
+  color: white;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+}
+
+.level-high { /* HIGH */
+  background-color: red;
+  color: white;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.content-low ul {
+  text-align: left;
+  list-style: none !important;
+
+}
+
+.vaccine-details-button {
+  background-color: #2188DD;
+  color: white;
+}
+
+.row {
+  display: flex;
+  position: inherit;
+  border-radius: 10%;
+  text-align: left;
+  font-size: 1em;
+  padding-left: 15%;
+  width: 85%;
+  height: 100%;
+  position: center;
+}
 
 
 
@@ -220,16 +265,34 @@ h4 {
 
 /* FOOTER COMPONENT */
 
-.FooterNavContainer {
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .footer-nav {
   margin-right: 15px;
+  padding-right: 15px;
   text-align: center;
   justify-content: center;
+  width: 90%;
+  padding-left: 8%;
+}
+
+.column {
+  /* flex: 5%;
+  padding: 2.5%; */
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 

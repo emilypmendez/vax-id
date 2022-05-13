@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import Navigation from './Navigation.js';
-import Footer from './Footer.js';
 import Heading from './Heading';
 import DashboardContent from './DashboardContent';
+import Footer from './Footer.js';
 
 export default function Dashboard() {
   return (
-    <main>
+    <>
     <nav
       style={{
         textAlign: "center",
@@ -23,10 +23,10 @@ export default function Dashboard() {
       <Link to="/settings">Settings</Link>
     </nav>
       <Navigation/>
-      <h2 className="Dashboard">Dashboard</h2>
+        <h2 className="Dashboard">Dashboard</h2>
       <Heading/>
-      <DashboardContent/>
+        <DashboardContent/>
       <Footer/>
-    </main>
+    </>
   );
 }
